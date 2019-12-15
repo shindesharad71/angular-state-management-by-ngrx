@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-state-management-by-ngrx';
+  title = 'Angular State Management By Ngrx';
 }
