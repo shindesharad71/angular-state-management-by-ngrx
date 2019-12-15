@@ -1,0 +1,12 @@
+<div class="card-body">
+  <h4 class="card-title">Store States</h4>
+  <div class="list-wrapper">
+    <ul class="d-flex flex-column-reverse todo-list">
+      <li *ngFor="let item of storeStates; let i = index">
+        <ngx-prism [language]="language">
+          {{ stringify(item) }}
+        </ngx-prism>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="list-wrapper">
+  <ul class="d-flex flex-column-reverse todo-list">
+    <li *ngFor="let item of todoList | async; let i = index">
+      <div class="form-check">{{ i + 1 }}. {{ item?.taskName }}</div>
+      <img
+        src="../assets/cross.svg"
+        height="16"
+        width="16"
+        alt="Remove"
+        (click)="RemoveItem(i)"
+      />
+    </li>
+  </ul>
+</div>
