@@ -1,6 +1,6 @@
 <h4>Todo List</h4>
 <ul class="todo-list">
-    <li *ngFor="let item of todoListItems | async; let i=index">
-        <span>{{i+1}}.</span> {{item?.taskName}}
+    <li *ngFor="let item of todoList | async; let i=index">
+        <span>{{i+1}}.</span> {{item?.taskName}} <span (click)="RemoveItem(i)">X</span>
     </li>
 </ul>

@@ -10,13 +10,13 @@ export class ActionEx implements Action {
     payload: any;
 }
 
-export class CustomerAdd implements ActionEx {
+export class AddItem implements ActionEx {
     readonly type = TodoActionTypes.Add;
-    constructor(public payload: any) {
+    constructor(public payload: any) {        
     }
 }
 
-export class CustomerRemove implements ActionEx {
+export class RemoveItem implements ActionEx {
     readonly type = TodoActionTypes.Remove;
     constructor(public payload: any) {
     }
