@@ -3,12 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { StoreModule } from '@ngrx/store';
+import { TodoReducer } from '../app/reducers/todo.reducer';
+import { TodoListItemsComponent } from './todo-list-items/todo-list-items.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoListItemsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StoreModule.forRoot({todo: TodoReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
