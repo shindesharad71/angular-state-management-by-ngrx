@@ -1,3 +1,16 @@
-<div class="add-items d-flex"> <input type="text" class="form-control todo-list-input"
-        placeholder="What do you need to do today?" #item> <button
-        class="add btn btn-primary font-weight-bold todo-list-add-btn" (click)="AddItem(item.value)">Add</button> </div>
+<div class="add-items d-flex">
+  <input
+    type="text"
+    class="form-control todo-list-input"
+    placeholder="What do you need to do today?"
+    [(ngModel)]="listItemName"
+  />
+  <button
+    class="add btn btn-primary font-weight-bold todo-list-add-btn"
+    (click)="AddItem()"
+    (keydown.enter)="AddItem()"
+    [disabled]="!listItemName?.length"
+  >
+    Add
+  </button>
+</div>
