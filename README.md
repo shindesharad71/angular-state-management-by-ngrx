@@ -1,4 +1,6 @@
-# AngularStateManagementByNgrx
+# Angular State Management By Ngrx
+
+A Demo of Angular State Management Using Ngrx.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
