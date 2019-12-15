@@ -1,0 +1,18 @@
+.header {
+  background-color: #1976d2;
+  background: linear-gradient(145deg, #0d47a1, #42a5f5);
+  color: #fff;
+  height: 70px;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+      padding: 8px;
+  }
+}
+
+small {
+    display: flex;
+    justify-content: flex-end;
+    margin: -24px 8px;
+}
